@@ -11,7 +11,7 @@
       <![endif]-->
     </head>
     <body>
-    <h1>Welcome to PushND</h1>
+    <h1>Welcome to PushND Music</h1>
 
 
     <!-- run javascript at the end -->
