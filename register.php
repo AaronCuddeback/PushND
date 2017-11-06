@@ -7,6 +7,11 @@
     include("includes/handlers/register-handler.php");
     include("includes/handlers/login-handler.php");
 
+    function getInputValue($name) {
+        if(isset($_POST[$name])) {
+            echo $_POST[$name];
+        }
+    }
  ?>
     <!doctype html>
     <html lang="en">
@@ -41,27 +46,27 @@
                 <p>
                     <?php echo $account->getError(Constants::$userNameLength); ?>
                     <label for="username">Username</label>
-                    <input id="username" type="text" name="username" placeholder="e.g. BartSimpson" required>
+                    <input id="username" type="text" name="username" placeholder="e.g. BartSimpson"  value="<?php getInputValue('username') ?>" required>
                 </p>
                 <p>
                     <?php echo $account->getError(Constants::$firstNameLength); ?>
                     <label for="firstName">First Name</label>
-                    <input id="firstName" type="text" name="firstName" placeholder="e.g. Bart" required>
+                    <input id="firstName" type="text" name="firstName" placeholder="e.g. Bart" value="<?php getInputValue('firstName') ?>" required>
                 </p>
                 <p>
                     <?php echo $account->getError(Constants::$lastNameLength); ?>
                     <label for="lastName">Last Name</label>
-                    <input id="lastName" type="text" name="lastName" placeholder="e.g. Simpson" required>
+                    <input id="lastName" type="text" name="lastName" placeholder="e.g. Simpson" value="<?php getInputValue('lastName') ?>" required>
                 </p>
                 <p>
                     <?php echo $account->getError(Constants::$emailsDoNotMatch); ?>
                     <?php echo $account->getError(Constants::$emailsInvalid); ?>
                     <label for="email">Email</label>
-                    <input id="email" type="email" name="email" placeholder="e.g. bart@gmail.com" required>
+                    <input id="email" type="email" name="email" placeholder="e.g. bart@gmail.com" value="<?php getInputValue('email') ?>" required>
                 </p>
                 <p>
                     <label for="confirmEmail">Confirm Email</label>
-                    <input id="confirmEmail" type="email" name="confirmEmail" placeholder="Type email again" required>
+                    <input id="confirmEmail" type="email" name="confirmEmail" placeholder="Type email again" value="<?php getInputValue('confirmEmail') ?>" required>
                 </p>
                 <p>
                     <?php echo $account->getError(Constants::$passwordsDoNotMatch); ?>
