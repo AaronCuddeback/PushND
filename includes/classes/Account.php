@@ -44,7 +44,7 @@
         return;
       }
     }
-
+    
     private function validateLastName($lastName) {
       if(strlen($lastName) > 25 || strlen($lastName) < 2){
         array_push($this->errorArray, Constants::$lastNameLength);
