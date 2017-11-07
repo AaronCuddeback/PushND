@@ -45,22 +45,26 @@
 
 
     private function validateUsername($username) {
-        if(strlen($username) > 25 || strlen($username) < 5){
+        if(strlen($username) > 25 || strlen($username) < 5) {
           array_push($this->errorArray, Constants::$userNameLength);
+            return;
+        }
+        $checkUsernameQuery = mysqli_query($this->con, "SELECT ` userName` FROM `users` WHERE ` userName`= '$username'");
+        if(mysqli_num_rows($checkUsernameQuery) !=0) {
+          array_push($this->errorArray, Constants::$userNameTaken);
           return;
         }
-        // TODO: check that username has not already been used
     }
 
     private function validateFirstName($firstName) {
-      if(strlen($firstName) > 25 || strlen($firstName) < 2){
+      if(strlen($firstName) > 25 || strlen($firstName) < 2) {
         array_push($this->errorArray, Constants::$firstNameLength);
         return;
       }
     }
 
     private function validateLastName($lastName) {
-      if(strlen($lastName) > 25 || strlen($lastName) < 2){
+      if(strlen($lastName) > 25 || strlen($lastName) < 2) {
         array_push($this->errorArray, Constants::$lastNameLength);
         return;
       }
@@ -75,7 +79,10 @@
         array_push($this->errorArray, Constants::$emailsInvalid);
         return;
       }
-      //TODO: Check that email has not already been used
+      $checkEmailQuery = mysqli_query($this->con, "SELECT email FROM users WHERE email='$email'");
+      if(mysqli_num_rows($checkEmailQuery) !=0) {
+        array_push($this->errorArray, Constants::$emailTaken);
+      }
     }
 
     private function validatePasswords($password, $confirmPassword) {
