@@ -7,7 +7,8 @@ body {
 
 #background {
   background-color: #000;
-  background-image: url("../images/banner-image1.jpg");
+  /*background-image: url("../images/banner-image1.jpg");*/
+  background:linear-gradient(0deg,rgba(255,0,150,0.3),rgba(209, 56, 0,0.3)),url(../images/banner-image1.jpg);
   background-position: auto;
   background-size: cover;
   display: table;
@@ -28,3 +29,27 @@ body {
   margin: 0 auto;
   position: relative;
   max-width: 1024px;
+}
+
+#inputContainer {
+  width: 400px;
+  padding: 45px;
+  float: left;
+  border-right: 1px solid #fff;
+}
+
+#inputContainer h2 {
+  text-align: center;
+}
+
+#inputContainer input[type="text"],
+#inputContainer input[type="email"],
+#inputContainer input[type="password"] {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  height: 27px;
+  line-height: 27px;
+  width: 100%;
+}
