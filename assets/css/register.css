@@ -1,0 +1,8 @@
+#background {
+  background-color: #000;
+  background-image: url("../images/banner-image1.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  display: table;
+  width: auto;
+}
