@@ -133,5 +133,6 @@ transition: all 0.4s ease 0s;
 #loginText li {
   font-size: 20px;
   list-style-type: none;
-  padding: 10px;
+  padding: 5px 35px;
+  background: url(../images/icons/checkmark.ico) no-repeat;
 }
