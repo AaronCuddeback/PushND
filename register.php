@@ -41,7 +41,10 @@
                             <label for="loginPassword">Password</label>
                             <input id="loginPassword" type="password" name="loginPassword" placeholder="Your password" required>
                         </p>
-                        <button type="submit" name="loginButton">LOGIN</button>
+                        <button type="submit" name="loginButton">LOG IN</button>
+                        <div class="hasAccountText">
+                          <span id="hideLogin">Don't have an account yet? Signup here.</span>
+                        </div>
                     </form>
 
 
@@ -86,6 +89,9 @@
                             <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Type password again" required>
                         </p>
                         <button type="submit" name="registerButton">SIGN UP</button>
+                        <div class="hasAccountText">
+                          <span id="hideRegister">Already have an account? Login here.</span>
+                        </div>
                     </form>
                 </div>
             </div>
