@@ -113,8 +113,18 @@
                         </div>
                     </form>
                 </div>
+                    <div id="loginText">
+                        <h1>Push Independence</h1>
+                        <h2>Join an Indie Revolution</h2>
+                        <ul>
+                            <li>Discover new Artists</li>
+                            <li>Support your favorite Indie Artists</li>
+                            <li>Promote your own music</li>
+                        </ul>
+                    </div>
+
             </div>
-    </div>
+        </div>
 
     <!-- run javascript at the end -->
       <script src="assets/js/scripts.js"></script>

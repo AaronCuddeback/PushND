@@ -8,7 +8,7 @@ body {
 #background {
   background-color: #000;
   /*background-image: url("../images/banner-image1.jpg");*/
-  background:linear-gradient(0deg,rgba(51, 204, 208,0.4),rgba(133, 49, 206,0.4)),url(../images/banner-image1.jpg);
+  background:linear-gradient(0deg,rgba(196, 115, 53, 0.7),rgba(43, 5, 4, 0.7)),url(../images/banner-image1.jpg);
   background-position: auto;
   background-size: cover;
   display: table;
@@ -89,22 +89,49 @@ letter-spacing: 1px;
 margin: 20px auto;
 height: 41px;
 width: 100%;
+transition: all 0.4s ease 0s;
 }
 
 #inputContainer button:hover {
   cursor: pointer;
-  background-color: #b04f4f;
+  background-color: #E3170A;
 }
 .hasAccountText span {
   font-weight: bold;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .hasAccountText {
   text-align: center;
+
 }
 
 #registerForm,
 #loginForm {
   display: none;
+}
+#loginText {
+  padding: 45px;
+  display: table-cell;
+}
+
+#loginText h1 {
+  color: #E3170A;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+#loginText h2 {
+  margin: 35px 0;
+}
+
+#loginText ul {
+  padding: 0;
+}
+
+#loginText li {
+  font-size: 20px;
+  list-style-type: none;
+  padding: 10px;
 }
