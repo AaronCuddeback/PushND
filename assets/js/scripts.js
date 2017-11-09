@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
   $("#hideLogin").click(function() {
