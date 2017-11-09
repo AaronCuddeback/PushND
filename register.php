@@ -22,6 +22,7 @@
       <meta name="description" content="New Web Site">
       <meta name="author" content="">
       <link rel="stylesheet" href="assets/css/register.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
@@ -98,6 +99,6 @@
     </div>
 
     <!-- run javascript at the end -->
-      <script src="js/scripts.js"></script>
+      <script src="assets/js/scripts.js"></script>
     </body>
     </html>
