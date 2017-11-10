@@ -54,7 +54,7 @@
                         <p>
                             <?php echo $account->getError(Constants::$loginFailed); ?>
                             <label for="loginUsername">Username</label>
-                            <input id="loginUsername" type="text" name="loginUsername" placeholder="e.g. BartSimpson" required>
+                            <input id="loginUsername" type="text" name="loginUsername" placeholder="e.g. BartSimpson" value="<?php getInputValue('loginUsername') ?>" required>
                         </p>
                         <p>
                             <label for="loginPassword">Password</label>
