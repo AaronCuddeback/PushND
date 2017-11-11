@@ -44,7 +44,7 @@
                 </button>
 
                 <button type="button" name="playButton" class="controlButton play" title="Play Button">
-                  <img src="assets/images/icons/play.png" alt="Play">
+                  <img src="assets/images/icons/playbutton.svg" alt="Play">
                 </button>
 
                 <button type="button" name="pauseButton" class="controlButton pause" title="Pause Button" style="display: none;">

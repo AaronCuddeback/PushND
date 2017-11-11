@@ -53,3 +53,12 @@ html, body {
   width: 20px;
   height: 20px;
 }
+
+.controlButton.play img,
+.controlButton.pause img {
+  height: 32px;
+  width: 32px;
+}
+.controlButton:hover {
+  cursor: pointer;
+}
