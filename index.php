@@ -26,7 +26,9 @@
     <body>
     <h1>Welcome to PushND</h1>
     <div id="nowPlayingBarContainer">
+      <div id="nowPlayingBar">
 
+      </div>
     </div>
 
     <!-- run javascript at the end -->
