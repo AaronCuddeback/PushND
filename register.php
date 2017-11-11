@@ -62,7 +62,7 @@
                         </p>
                         <button type="submit" name="loginButton">LOG IN</button>
                         <div class="hasAccountText">
-                          <span id="hideLogin">Don't have an account yet? Signup here.</span>
+                          <span id="hideLogin">Don't have an account yet? <span class="linkColor">Signup here.</span></span>
                         </div>
                     </form>
 
@@ -109,7 +109,7 @@
                         </p>
                         <button type="submit" name="registerButton">SIGN UP</button>
                         <div class="hasAccountText">
-                          <span id="hideRegister">Already have an account? Login here.</span>
+                          <span id="hideRegister">Already have an account? <span class="linkColor">Login here.</span></span>
                         </div>
                     </form>
                 </div>
