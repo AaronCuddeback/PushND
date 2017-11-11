@@ -27,7 +27,17 @@
     <h1>Welcome to PushND</h1>
     <div id="nowPlayingBarContainer">
       <div id="nowPlayingBar">
+        <div id="nowPlayingLeft">
 
+        </div>
+
+        <div id="nowPlayingCenter">
+
+        </div>
+
+        <div id="nowPlayingRight">
+
+        </div>
       </div>
     </div>
 
