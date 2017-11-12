@@ -24,6 +24,16 @@ if(isset($_GET['id'])) {
 
   </div>
 
+  <div class="trackListContainer">
+    <ul class="trackList">
+        <?php
+        $songIdArray = $album->getSongIds();
+        foreach($songIdArray as $songId) {
+            echo $songId . "<br />";
+        }
+        ?>
+    </ul>
+  </div>
 
 
 <?php require "includes/footer.php"; ?>
