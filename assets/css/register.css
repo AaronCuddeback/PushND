@@ -5,20 +5,34 @@ body {
   height: 100%;
 }
 
-/*#background {
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot');
+    src: url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff2') format('woff2'),
+         url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff') format('woff'),
+         url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.ttf') format('truetype'),
+         url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#background {
   background-color: #000;
-  background-image: url(../images/banner-image2.png);
+  /*background-image: url(../images/banner-image2.png);*/
   background: rgba(83, 105, 118, 0.7), url(../images/banner-image2.png);  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, rgba(187, 210, 197, 0.7), rgba(83, 105, 118, 0.7)),url(../images/banner-image2.png);  /* Chrome 10-25, Safari 5.1-6 */
-  /*background: linear-gradient(to right, rgba(187, 210, 197, 0.6), rgba(83, 105, 118, 0.5)),url(../images/banner-image2.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */*/
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(83, 105, 118, 0)),url(../images/banner-image2.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-position: auto;
   background-size: cover;
   display: table;
   height: 100%;
   width: 100%;
-}*/
+}
 
-#background {
+/*#background {
   position: relative;
 }
 #background:after {
@@ -33,54 +47,55 @@ body {
     height: 100%;
     opacity : 0.5;
     z-index: -1;
-}
+}*/
 
 
 .linkColor {
-  color: #8C271E !important;
+  /*color: #8C271E !important;*/
 }
 
 #loginContainer * {
-  color: #fff;
-  font-family: "Circular,Helvetica,Arial",sans-serif;
-  /*"Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
+  color: #000;
+  font-family: 'Patua One', cursive;
+  /*font-family: "Circular", "Helvetica" ,"Arial", sans-serif;*/
+  /*font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
   font-weight: normal;
   line-height: 1em;
   box-sizing: border-box;
 }
 
 #loginContainer {
-  padding-top: 320px;
+  padding-top: 100px;
   width: 90%;
-  margin: auto;
+  /*margin: auto;*/
   position: relative;
   max-width: 1200px;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #fff;
+    color:    #a0a0a0;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #fff;
+   color:    #a0a0a0;
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #fff;
+   color:    #a0a0a0;
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #fff;
+   color:    #a0a0a0;
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
-   color:    #fff;
+   color:    #a0a0a0;
 }
 
 #inputContainer {
   width: 400px;
   padding: 50px;
   float: left;
-  border-right: 1px solid #fff;
-  margin-left: 100px;
+  border-right: 1px solid #000;
+  margin-left: 50px;
 }
 
 #inputContainer h2 {
@@ -94,14 +109,14 @@ body {
   display: block;
   background-color: transparent;
   border: 0;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #8C271E;
   height: 27px;
   line-height: 27px;
   width: 100%;
 }
 
 #inputContainer label{
-color: #fff;
+color: #000;
 font-size: 13px;
 margin-top: 15px;
 text-shadow: 0.2px 0.2px #211f20;
@@ -109,27 +124,28 @@ text-shadow: 0.2px 0.2px #211f20;
 
 #inputContainer button {
 background-color: transparent;
-border: 2px solid #fff;
+border: 2px solid #8C271E;
 border-radius: 250px;
-color: #fff;
+color: #000;
 display: block;
 font-size: 14px;
 letter-spacing: 1px;
 margin: 20px auto;
 height: 41px;
 width: 100%;
-transition: all 0.4s ease 0s;
+transition: all 0.5s ease 0s;
 }
 
 #inputContainer button:hover {
   cursor: pointer;
   background-color: #8C271E;
+  color: #fff;
 }
 .hasAccountText span {
   font-weight: bold;
   font-size: 12px;
   cursor: pointer;
-  text-shadow: 0.3px 0.3px #211f20;
+
 }
 
 .hasAccountText {
@@ -143,21 +159,22 @@ transition: all 0.4s ease 0s;
 }
 #loginText {
   padding: 10px;
+  padding-top: 80px;
   display: table-cell;
   padding-right: 0px;
 }
 
-#loginText h1 {
-  margin: 10px;
+#loginTitle h1 {
+  margin-left: 100px;
   color: #8C271E;
   font-size: 70px;
   font-weight: bold;
-  text-shadow: 0.8px 0.8px #211f20;
+
 }
 
 #loginText h2 {
   margin: 35px 10px;
-  text-shadow: 0.6px 0.6px #211f20;
+
 }
 
 #loginText ul {
@@ -169,12 +186,11 @@ transition: all 0.4s ease 0s;
   list-style-type: none;
   padding: 5px 35px;
   background: url(../images/icons/checkmark.svg) no-repeat;
-  text-shadow: 0.4px 0.4px #211f20;
+
 }
 
 #inputContainer .errorMessage {
   color: #b94a48;
-  text-shadow: 0.2px 0.2px #211f20;
   font-size: 14px;
   display: block;
   padding-bottom: 10px;
