@@ -1,15 +1,15 @@
 <?php
-  include("includes/config.php");
+  require "includes/config.php";
 
   // session_destroy();
 
-  if(isset($_SESSION['userLoggedIn'])){
+if(isset($_SESSION['userLoggedIn'])) {
     $userLoggedIn = $_SESSION['userLoggedIn'];
-  } else {
+} else {
     header("Location: register.php");
-  }
+}
 
- ?>
+    ?>
   <!doctype html>
     <html lang="en">
     <head>
@@ -26,12 +26,21 @@
     </head>
     <body>
     <div id="mainContainer">
-      <div id="topContainer">
-        <?php include("includes/navBarContainer.php"); ?>
-      </div>
-        <?php include("includes/nowPlayingBar.php"); ?>
-    </div>
 
+      <div id="topContainer">
+
+        <?php require "includes/navBarContainer.php"; ?>
+
+          <div id="mainViewContainer">
+            <div id="mainContent">
+
+            </div>
+          </div>
+
+      </div>
+        <?php require "includes/nowPlayingBar.php"; ?>
+
+    </div>
     <!-- run javascript at the end -->
       <script src="js/scripts.js"></script>
     </body>
