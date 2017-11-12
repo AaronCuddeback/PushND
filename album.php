@@ -46,6 +46,14 @@ if(isset($_GET['id'])) {
                     <span class='artistName'>". $albumArtist->getName() . "</span>
                   </div>
 
+                  <div class='trackOptions'>
+                    <img class='optionsButton' src='assets/images/icons/more.png'/>
+                  </div>
+
+                  <div class='trackDuration'>
+                    <span class='duration'>" . $albumSong->getDuration() . "</span>
+                  </div>
+
                   </li>";
 
                   $i++;
