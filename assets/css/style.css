@@ -167,3 +167,16 @@ html, body {
   height: 75px;
   padding-left: 35px;
 }
+
+.navBar .group {
+  border-top: 1px solid #a0a0a0;
+  padding: 10px 0;
+}
+
+.navItem {
+  padding: 7px;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  letter-spacing: 1px;
+}
