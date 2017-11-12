@@ -29,7 +29,11 @@
     <div id="nowPlayingBarContainer">
       <div id="nowPlayingBar">
         <div id="nowPlayingLeft">
-
+          <div class="content">
+            <span class="albumLink">
+              <img class="albumArtwork" src="assets/images/albumCovers/LockedandLoaded.jpg" alt="Locked And Loaded Album Cover">
+            </span>
+          </div>
         </div>
 
         <div id="nowPlayingCenter">
