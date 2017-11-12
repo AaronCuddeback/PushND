@@ -28,7 +28,11 @@
     <div id="mainContainer">
       <div id="topContainer">
         <div id="navBarContainer">
-            
+            <nav class="navBar">
+              <a href="index.php" class="logo">
+                <img src="assets/images/icons/pushnd-circle.png" alt="PushND">
+              </a>
+            </nav>
         </div>
       </div>
       <div id="nowPlayingBarContainer">

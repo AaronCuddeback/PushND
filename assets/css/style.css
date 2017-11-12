@@ -155,3 +155,15 @@ html, body {
 .volumeBar .progressBar {
   width: 125px;
 }
+
+.navBar {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.logo img {
+  height: 75px;
+  padding-left: 35px;
+}
