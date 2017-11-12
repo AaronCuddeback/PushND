@@ -6,7 +6,8 @@ html, body {
 
 * {
   font-family: "Roboto", sans-serif;
-  color: #fff
+  color: #fff;
+
 }
 
 body {
@@ -232,6 +233,10 @@ body {
 
 .gridViewItem img {
   width: 100%;
+}
+
+.gridViewItem a {
+  text-decoration: none;
 }
 
 .gridViewInfo {
