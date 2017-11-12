@@ -1,6 +1,7 @@
 <?php
 
-  class Album {
+class Album
+{
 
     private $con;
     private $id;
@@ -9,7 +10,8 @@
     private $genre;
     private $artworkPath;
 
-    public function __construct($con, $id) {
+    public function __construct($con, $id)
+    {
         $this->con = $con;
         $this->id = $id;
 
@@ -23,21 +25,31 @@
 
     }
 
-    public function getTitle(){
-      return $this->title;
+    public function getTitle()
+    {
+        return $this->title;
     }
 
-    public function getArtist(){
-      return new Artist($this->con, $this->artistID);
+    public function getArtist()
+    {
+        return new Artist($this->con, $this->artistID);
     }
 
-    public function artworkPath(){
-      return $this->artworkPath;
+    public function artworkPath()
+    {
+        return $this->artworkPath;
     }
 
-    public function getGenre(){
-      return $this->genre;
+    public function getGenre()
+    {
+        return $this->genre;
     }
 
-  }
+    public function getNumberOfSongs()
+    {
+        $query = mysqli_query($this->con, "SELECT id FROM songs WHERE album='$this->id'");
+        return mysqli_num_rows($query);
+    }
+
+}
 ?>
