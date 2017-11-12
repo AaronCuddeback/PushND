@@ -30,6 +30,11 @@ html, body {
   min-width: 180px;
 }
 
+#nowPlayingRight{
+  position: relative;
+  margin-top: 16px;
+}
+
 #nowPlayingCenter {
   width: 40%;
   min-width: 700px;
@@ -125,4 +130,14 @@ html, body {
 
 .playbackBar .progressBar {
   margin-top: 3px;
+}
+
+.volumeBar {
+  width: 180px;
+  position: absolute;
+  right: 0;
+}
+
+.volumeBar .progressBar {
+  width: 125px;
 }
