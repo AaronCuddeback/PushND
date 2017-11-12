@@ -113,6 +113,7 @@ body {
   height: 27px;
   line-height: 27px;
   width: 100%;
+  outline: 0;
 }
 
 #inputContainer label{
