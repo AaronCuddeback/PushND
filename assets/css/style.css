@@ -164,8 +164,8 @@ html, body {
 }
 
 .logo img {
-  height: 75px;
-  padding-left: 35px;
+  height: 40px;
+  padding-left: 15px;
   margin-bottom: 15px;
 }
 
@@ -186,6 +186,11 @@ html, body {
 .navItemLink {
   color: #a0a0a0;
   text-decoration: none;
+}
+
+.navItemLink:hover {
+  color: #a0a0a0;
+  color: #8C271E;
 }
 
 .navItemLink .icon {

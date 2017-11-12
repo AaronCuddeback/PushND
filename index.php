@@ -30,7 +30,7 @@
         <div id="navBarContainer">
             <nav class="navBar">
               <a href="index.php" class="logo">
-                <img src="assets/images/icons/pushnd-circle.png" alt="PushND">
+                <img src="assets/images/icons/pushnd-square.png" alt="PushND">
               </a>
 
               <div class="group">
