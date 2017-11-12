@@ -23,7 +23,7 @@
       <meta name="author" content="">
       <link rel="stylesheet" href="assets/css/register.css">
       <link rel="stylesheet" href="assets/css/fonts.css?v=1.0">
-      <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

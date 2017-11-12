@@ -20,6 +20,7 @@
       <meta name="author" content="">
       <link rel="stylesheet" href="assets/css/style.css?v=1.0">
       <link rel="stylesheet" href="assets/css/fonts.css?v=1.0">
+      <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto" rel="stylesheet">
       <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
@@ -33,6 +34,17 @@
             <span class="albumLink">
               <img class="albumArtwork" src="assets/images/albumCovers/LockedandLoaded.jpg" alt="Locked And Loaded Album Cover">
             </span>
+            <div class="trackInfo">
+
+              <span class="trackName">
+                <span>Locked and Loaded</span>
+              </span>
+
+              <span class="artistName">
+                <span>Vanishing Affair</span>
+              </span>
+
+            </div>
           </div>
         </div>
 

@@ -4,6 +4,10 @@ html, body {
   height: 100%;
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+  color: #fff
+}
 
 #nowPlayingBarContainer {
   width: 100%;
@@ -45,6 +49,21 @@ html, body {
   margin-right: 15px;
   float: left;
   background-size: cover;
+}
+
+#nowPlayingLeft .trackInfo {
+  display: table;
+}
+
+#nowPlayingLeft .trackInfo .trackName {
+  margin-top: 6px;
+  display: inline-block;
+  width: 100%;
+}
+
+#nowPlayingLeft .trackInfo .artistName span {
+  font-size: 12px;
+  color: #a0a0a0;
 }
 
 .playerControls .buttons  {
