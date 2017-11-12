@@ -1,22 +1,28 @@
-<?php require ("includes/header.php");
+<?php require "includes/header.php";
 
-  if(isset($_GET['id'])) {
+if(isset($_GET['id'])) {
     $albumID = $_GET['id'];
-  } else {
+} else {
     header("Location: index.php");
-  }
+}
 
   $album = new Album($con, $albumID);
-
   $artist = $album->getArtist();
-
-  echo $album->getTitle() . "<br />";
-  echo $artist->getName();
-
 ?>
 
+  <div class="entityInfo">
+
+    <div class="leftSection">
+      <img src="<?php echo $album->artworkPath(); ?>" alt="">
+    </div>
+
+    <div class="rightSection">
+      <h2><?php echo $album->getTitle(); ?></h2>
+      <span>By: <?php echo $artist->getName(); ?></span>
+    </div>
+
+  </div>
 
 
 
-
-<?php require ("includes/footer.php"); ?>
+<?php require "includes/footer.php"; ?>

@@ -4,9 +4,9 @@
 
     $timezone = date_default_timezone_set("America/Los_Angeles");
 
-    $con = mysqli_connect("localhost", "root", "", "pushnd");
-    if(mysqli_connect_errno()){
-      echo "Failed to connect: " . mysqli_connect_errno();
-    }
+    $con = mysqli_connect("localhost", "root", "root", "pushnd");
+if(mysqli_connect_errno()) {
+    echo "Failed to connect: " . mysqli_connect_errno();
+}
 
- ?>
+    ?>
