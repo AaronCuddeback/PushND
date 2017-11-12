@@ -1,6 +1,6 @@
 <?php
-  require "includes/config.php";
-
+  include("includes/config.php");
+  include("includes/classes/Artist.php");
   // session_destroy();
 
 if(isset($_SESSION['userLoggedIn'])) {
@@ -29,7 +29,7 @@ if(isset($_SESSION['userLoggedIn'])) {
 
       <div id="topContainer">
 
-        <?php require "includes/navBarContainer.php"; ?>
+        <?php include("includes/navBarContainer.php"); ?>
 
           <div id="mainViewContainer">
             <div id="mainContent">
