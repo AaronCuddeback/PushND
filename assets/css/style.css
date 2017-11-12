@@ -71,6 +71,11 @@ html, body {
   color: #a0a0a0;
 }
 
+#topContainer {
+  min-height: 100%;
+  width: 100%;
+}
+
 .playerControls .buttons  {
   margin: 0 auto;
   display: table;
