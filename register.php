@@ -1,19 +1,20 @@
 <?php
-    include("includes/config.php");
-    include("includes/classes/Account.php");
-    include("includes/classes/Constants.php");
+    require "includes/config.php";
+    require "includes/classes/Account.php";
+    require "includes/classes/Constants.php";
 
         $account = new Account($con);
 
-    include("includes/handlers/register-handler.php");
-    include("includes/handlers/login-handler.php");
+    require "includes/handlers/register-handler.php";
+    require "includes/handlers/login-handler.php";
 
-    function getInputValue($name) {
-        if(isset($_POST[$name])) {
-            echo $_POST[$name];
-        }
+function getInputValue($name)
+{
+    if(isset($_POST[$name])) {
+        echo $_POST[$name];
     }
- ?>
+}
+    ?>
     <!doctype html>
     <html lang="en">
     <head>
@@ -22,7 +23,7 @@
       <meta name="description" content="New Web Site">
       <meta name="author" content="">
       <link rel="stylesheet" href="assets/css/register.css">
-      <link rel="stylesheet" href="assets/css/fonts.css?v=1.0">
+      <link rel="stylesheet" href="assets/css/fonts/fonts.css?v=1.0">
       <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <!--[if lt IE 9]>
@@ -31,22 +32,22 @@
     </head>
     <body>
         <?php
-            if(isset($_POST['registerButton'])) {
-                echo '<script>
+        if(isset($_POST['registerButton'])) {
+            echo '<script>
                             $(document).ready(function(){
                               $("#loginForm").hide();
                               $("#registerForm").show();
                             });
                       </script>';
-            } else {
-                echo '<script>
+        } else {
+            echo '<script>
                             $(document).ready(function(){
                               $("#loginForm").show();
                               $("#registerForm").hide();
                             });
                       </script>';
-            }
-         ?>
+        }
+            ?>
 
         <div id="background">
             <div id="loginContainer">
@@ -130,6 +131,6 @@
         </div>
 
     <!-- run javascript at the end -->
-      <script src="assets/js/scripts.js"></script>
+      <script src="assets/js/register.js"></script>
     </body>
     </html>
