@@ -1,7 +1,5 @@
 <?php
-
   $songQuery = mysqli_query($con, "SELECT * FROM songs ORDER BY RAND() LIMIT 10");
-
   $resultArray = array();
 
 while($row = mysqli_fetch_array($songQuery)) {
@@ -12,9 +10,7 @@ $jsonArray = json_encode($resultArray);
 ?>
 
 <script type="text/javascript">
-
   console.log(<?php echo $jsonArray; ?>);
-
 </script>
 
 

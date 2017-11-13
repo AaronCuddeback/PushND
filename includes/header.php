@@ -22,6 +22,7 @@ if(isset($_SESSION['userLoggedIn'])) {
       <link rel="stylesheet" href="assets/css/style.css?v=1.0">
       <link rel="stylesheet" href="assets/css/fonts/fonts.css?v=1.0">
       <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="assets/js/register.js"></script>
       <script src="assets/js/script.js"></script>
 
