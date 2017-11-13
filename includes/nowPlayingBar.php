@@ -10,7 +10,17 @@ $jsonArray = json_encode($resultArray);
 ?>
 
 <script type="text/javascript">
-  console.log(<?php echo $jsonArray; ?>);
+
+  $(document).ready(function() {
+    currentPlaylist = <?php echo $jsonArray; ?>;
+    audioElement = new Audio();
+    setTrack(currentPlaylist[0], currentPlaylist, false);
+  });
+
+  function setTrack(trackID, newPlaylist, play){
+
+  }
+
 </script>
 
 
