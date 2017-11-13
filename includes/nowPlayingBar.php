@@ -19,9 +19,21 @@ $jsonArray = json_encode($resultArray);
 
   function setTrack(trackID, newPlaylist, play){
       audioElement.setTrack("assets/music/Durand/I Came To Believe.mp3");
-      if(play) {
+      if(play == true) {
         audioElement.play();
       }
+  }
+
+  function playSong() {
+    $(".controlButton.play").hide();
+    $(".controlButton.pause").show();
+    audioElement.play();
+  }
+
+  function pauseSong() {
+    $(".controlButton.play").show();
+    $(".controlButton.pause").hide();
+    audioElement.pause();
   }
 
 </script>
@@ -60,11 +72,11 @@ $jsonArray = json_encode($resultArray);
               <img src="assets/images/icons/previous.png" alt="Previous">
             </button>
 
-            <button type="button" name="playButton" class="controlButton play" title="Play Button">
+            <button type="button" name="playButton" class="controlButton play" title="Play Button" onclick="playSong()">
               <img src="assets/images/icons/playbutton.svg" alt="Play">
             </button>
 
-            <button type="button" name="pauseButton" class="controlButton pause" title="Pause Button" style="display: none;">
+            <button type="button" name="pauseButton" class="controlButton pause" title="Pause Button" style="display: none;" onclick="pauseSong()">
               <img src="assets/images/icons/pause.png" alt="Pause">
             </button>
 
