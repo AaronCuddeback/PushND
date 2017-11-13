@@ -18,7 +18,10 @@ $jsonArray = json_encode($resultArray);
   });
 
   function setTrack(trackID, newPlaylist, play){
-
+      audioElement.setTrack("assets/music/Durand/I Came To Believe.mp3");
+      if(play) {
+        audioElement.play();
+      }
   }
 
 </script>
