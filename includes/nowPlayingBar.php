@@ -18,7 +18,9 @@ $jsonArray = json_encode($resultArray);
   });
 
   function setTrack(trackID, newPlaylist, play){
-      audioElement.setTrack("assets/music/Durand/I Came To Believe.mp3");
+      $.post("includes/handlers/ajax/getSongJson.php", { songID: trackID }, function(data) {
+        console.log(data);
+      });
       if(play == true) {
         audioElement.play();
       }
