@@ -21,6 +21,14 @@ $jsonArray = json_encode($resultArray);
       $.post("includes/handlers/ajax/getSongJson.php", { songID: trackID }, function(data) {
         var track = JSON.parse(data);
 
+        $(".trackName span").text(track.title);
+
+        $.post("includes/handlers/ajax/getArtistJson.php", { artistID: track.artist }, function(data) {
+          console.log(data);
+          var artist = JSON.parse(data);
+          $(".artistName span").text(artist.name);
+        });
+
         audioElement.setTrack(track.path);
         audioElement.play();
       });
@@ -55,11 +63,11 @@ $jsonArray = json_encode($resultArray);
         <div class="trackInfo">
 
           <span class="trackName">
-            <span>Locked and Loaded</span>
+            <span></span>
           </span>
 
           <span class="artistName">
-            <span>Vanishing Affair</span>
+            <span></span>
           </span>
 
         </div>
