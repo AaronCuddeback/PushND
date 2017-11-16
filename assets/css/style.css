@@ -285,10 +285,17 @@ body {
 }
 
 .trackListRow {
+
+  border-bottom: 0.4px solid #404040;
   height: 40px;
   padding: 15px 10px;
   list-style: none;
 }
+
+.trackListRow:first-child{
+  border-top: 0.4px solid #404040;
+}
+
 
 .trackListRow span {
   color: #939393;
