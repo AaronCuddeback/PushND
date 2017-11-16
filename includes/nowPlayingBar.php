@@ -9,7 +9,7 @@ while($row = mysqli_fetch_array($songQuery)) {
 $jsonArray = json_encode($resultArray);
 ?>
 
-<script type="text/javascript">
+<script>
 
   $(document).ready(function() {
     currentPlaylist = <?php echo $jsonArray; ?>;
@@ -17,26 +17,23 @@ $jsonArray = json_encode($resultArray);
     setTrack(currentPlaylist[0], currentPlaylist, false);
   });
 
-  function setTrack(trackID, newPlaylist, play){
+  function setTrack(trackID, newPlaylist, play) {
       $.post("includes/handlers/ajax/getSongJson.php", { songID: trackID }, function(data) {
         var track = JSON.parse(data);
-
         $(".trackName span").text(track.title);
 
         $.post("includes/handlers/ajax/getArtistJson.php", { artistID: track.artist }, function(data) {
-          console.log(data);
-          var artist = JSON.parse(data);
+           var artist = JSON.parse(data);
           $(".artistName span").text(artist.name);
         });
 
         $.post("includes/handlers/ajax/getAlbumJson.php", { albumID: track.album }, function(data) {
-          console.log(data);
           var album = JSON.parse(data);
           $(".albumLink img").attr("src", album.artworkPath);
         });
 
-        audioElement.setTrack(track.path);
-        audioElement.play();
+        audioElement.setTrack(track);
+        playSong();
       });
 
       if(play == true) {
@@ -45,6 +42,11 @@ $jsonArray = json_encode($resultArray);
   }
 
   function playSong() {
+
+    if(audioElement.audio.currentTime == 0) {
+      $.post("includes/handlers/ajax/updatePlays.php", { songID: audioElement.currentlyPlaying.id });
+    }
+
     $(".controlButton.play").hide();
     $(".controlButton.pause").show();
     audioElement.play();

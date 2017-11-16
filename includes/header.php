@@ -32,11 +32,11 @@ if(isset($_SESSION['userLoggedIn'])) {
     </head>
     <body>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       var audioElement = new Audio();
       audioElement.setTrack("assets/music/Vanishing/This_Road.mp3");
       // audioElement.audio.play();
-    </script>
+    </script> -->
 
     <div id="mainContainer">
 
