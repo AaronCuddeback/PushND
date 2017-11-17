@@ -41,7 +41,6 @@ function Audio() {
   this.audio.addEventListener("canplay", function(){
     var duration = formatTime(this.duration);
     $(".progressTime.remaining").text(duration);
-    updateTimeProgressBar(this);
   });
 
   this.audio.addEventListener("timeupdate", function(){
