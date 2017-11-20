@@ -1,5 +1,5 @@
 <?php
-  $songQuery = mysqli_query($con, "SELECT * FROM songs ORDER BY RAND() LIMIT 10");
+  $songQuery = mysqli_query($con, "SELECT * FROM songs ORDER BY RAND() LIMIT 30");
   $resultArray = array();
 
 while($row = mysqli_fetch_array($songQuery)) {
@@ -84,6 +84,11 @@ $jsonArray = json_encode($resultArray);
       setTrack(trackToPlay, currentPlaylist, true)
     }
 
+  function setRepeat() {
+    repeat = !repeat;
+    var imageName = repeat ? "repeat-active.png" : "repeat.png";
+    $(".controlButton.repeat img").attr("src", "assets/images/icons/" + imageName);
+  }
 
   function setTrack(trackID, newPlaylist, play) {
     currentIndex = currentPlaylist.indexOf(trackID);
@@ -177,7 +182,7 @@ $jsonArray = json_encode($resultArray);
               <img src="assets/images/icons/next.png" alt="Next">
             </button>
 
-            <button type="button" name="repeatButton" class="controlButton repeat" title="Repeat Button">
+            <button type="button" name="repeatButton" class="controlButton repeat" title="Repeat Button" onclick="setRepeat()">
               <img src="assets/images/icons/repeat.png" alt="Repeat">
             </button>
 
