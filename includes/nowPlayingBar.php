@@ -67,11 +67,23 @@ $jsonArray = json_encode($resultArray);
       audioElement.setTime(seconds);
     }
 
+    function nextSong() {
+      if(currentIndex == currentPlaylist.length -1) {
+        currentIndex = 0;
+      } else {
+        currentIndex++;
+      }
 
+      var trackToPlay = currentPlaylist[currentIndex];
+      setTrack(trackToPlay, currentPlaylist, true)
+    }
 
 
   function setTrack(trackID, newPlaylist, play) {
       $.post("includes/handlers/ajax/getSongJson.php", { songID: trackID }, function(data) {
+
+        currentIndex = currentPlaylist.indexOf(trackID);
+
         var track = JSON.parse(data);
         $(".trackName span").text(track.title);
 
