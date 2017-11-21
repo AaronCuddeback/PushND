@@ -31,13 +31,7 @@ if(isset($_SESSION['userLoggedIn'])) {
       <![endif]-->
     </head>
     <body>
-
-    <!-- <script type="text/javascript">
-      var audioElement = new Audio();
-      audioElement.setTrack("assets/music/Vanishing/This_Road.mp3");
-      // audioElement.audio.play();
-    </script> -->
-
+      
     <div id="mainContainer">
 
       <div id="topContainer">
