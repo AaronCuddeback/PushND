@@ -110,9 +110,40 @@ $jsonArray = json_encode($resultArray);
     shuffle = !shuffle;
     var imageName = shuffle ? "shuffle-active.png" : "shuffle.png";
     $(".controlButton.shuffle img").attr("src", "assets/images/icons/" + imageName);
+
+  if(shuffle == true)
+      //randomize playlist
+      shuffleArray(shufflePlaylist);
+  } else {
+    //shuffle has been deactivated
+    //go back to regular playlist
+  }
+}
+
+/**
+ * Shuffles array in place.
+ * @param {Array} a items An array containing the items.
+ */
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
   }
 
+
+
   function setTrack(trackID, newPlaylist, play) {
+
+    if(newPlaylist != currentPlaylist) {
+      currentPlaylist = newPlaylist;
+      shufflePlaylist = currentPlaylist.slice();
+      shuffleArray(shufflePlaylist);
+    }
+
     currentIndex = currentPlaylist.indexOf(trackID);
     pauseSong();
 
