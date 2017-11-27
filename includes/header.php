@@ -7,6 +7,7 @@
 
 if(isset($_SESSION['userLoggedIn'])) {
     $userLoggedIn = $_SESSION['userLoggedIn'];
+    echo "<script>userLoggedIn = '$userLoggedIn';</script>";
 } else {
     header("Location: register.php");
 }
@@ -31,7 +32,7 @@ if(isset($_SESSION['userLoggedIn'])) {
       <![endif]-->
     </head>
     <body>
-      
+
     <div id="mainContainer">
 
       <div id="topContainer">
