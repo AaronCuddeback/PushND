@@ -15,7 +15,7 @@ $artist = new Artist($con, $artistID);
         <div class="artistInfo">
             <h1 class="artistName"><?php echo $artist->getName(); ?></h1>
                 <div class="headerButtons">
-                    <button class="button" type="button" name="button">Play</button>
+                    <button class="button red" type="button" name="button">PLAY</button>
                 </div>
         </div>
     </div>
