@@ -25,7 +25,7 @@
         </div>
 
         <div class="navItem">
-          <span role="link" tabindex="0" onclick="openPage('profile.php')" class="navItemLink">Profile</span>
+          <span role="link" tabindex="0" onclick="openPage('profile.php')" class="navItemLink">Admin</span>
         </div>
 
       </div>

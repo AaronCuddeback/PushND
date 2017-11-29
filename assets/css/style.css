@@ -286,14 +286,14 @@ body {
 
 .trackListRow {
 
-  border-bottom: 0.4px solid #404040;
+  /* border-bottom: 0.4px solid #404040; */
   height: 40px;
   padding: 15px 10px;
   list-style: none;
 }
 
 .trackListRow:first-child{
-  border-top: 0.4px solid #404040;
+  /* border-top: 0.4px solid #404040; */
 }
 
 
@@ -385,4 +385,14 @@ body {
 .button.red {
   background-color: #8C271E;
   border-color: black;
+}
+
+.borderBottom {
+  border-bottom: 1px solid #939393;
+  margin-bottom: 20px;
+}
+
+.trackListContainer h2,
+.gridViewContainer h2{
+  text-align: center;
 }
