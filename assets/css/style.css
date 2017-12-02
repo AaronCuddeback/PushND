@@ -10,6 +10,10 @@ html, body {
 
 }
 
+*:focus {
+  outline:none
+}
+
 body {
   background-color: #181818;
   font-size: 14px;
@@ -292,11 +296,6 @@ body {
   list-style: none;
 }
 
-.trackListRow:first-child{
-  /* border-top: 0.4px solid #404040; */
-}
-
-
 .trackListRow span {
   color: #939393;
   font-weight: 200;
@@ -399,4 +398,29 @@ body {
 
 [role="link"]{
   cursor: pointer;
+}
+
+.searchContainer {
+  background-color: #242424;
+  padding: 20px 28px;
+}
+
+.searchContainer h4 {
+  margin: 0;
+  font-weight: 300;
+}
+
+.searchContainer input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 63px;
+  letter-spacing: 2px;
+
+}
+
+input:focus {
+  outline: none;
 }
