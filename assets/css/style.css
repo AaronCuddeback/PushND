@@ -440,3 +440,17 @@ input:focus {
 .artistContainer h2 {
   text-align: center;
 }
+
+.noResults {
+  margin: 15px;
+  display: block;
+}
+
+.buttonItems button {
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.playlistsContainer {
+  padding: 10px 0;
+}
