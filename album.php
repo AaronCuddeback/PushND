@@ -69,3 +69,14 @@ if(isset($_GET['id'])) {
 
     </ul>
   </div>
+
+<nav class="optionsMenu">
+        <input type="hidden" class="songId">
+        <div class="item">Promote!</div>
+        <div class="item">Add to Playlist</div>
+        <div class="item">Share</div>
+        <div class="item">Copy Link</div>
+</nav>
+
+
+
