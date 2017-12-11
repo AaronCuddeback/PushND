@@ -472,16 +472,25 @@ input:focus {
 
 .optionsMenu .item {
   width: 100%;
-  padding: 12px, 20px;
+  padding: 12px 20px;
   box-sizing: border-box;
   font-weight: 400;
   color: rgba(147, 147, 147, 0.8);
-  cursor: pinter;
+  cursor: pointer;
   height: 40px;
+  background-color: #282828;
+  font-size: 14px;
 }
 
 .optionsMenu .item:hover {
   color: #fff;
   background-color: #333;
   border-color: #333;
+}
+
+.optionsMenu select {
+  font-size: 14px;
+border: none;
+-webkit-appearance: none;
+-moz-appearance: none;
 }
