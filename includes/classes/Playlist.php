@@ -37,7 +37,7 @@
         return mysqli_num_rows($query);
     }
 
-      public function getSongIds()
+    public function getSongIds()
     {
         $query = mysqli_query($this->con, "SELECT songId FROM playlistSongs WHERE playlistId='$this->id' ORDER BY playlistOrder ASC");
 
@@ -48,6 +48,13 @@
         }
         return $array;
     }
-    
+
+    public static function getPlaylistsDropdown($con, $username) {
+        $dropdown = '<select name="addPlaylist" class="item playlist">
+                    <option valuse="">Add to playlist</option>
+                    </select>';
+        return $dropdown;
+    }
 }
+
 ?>

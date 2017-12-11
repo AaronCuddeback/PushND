@@ -73,7 +73,7 @@ if(isset($_GET['id'])) {
 <nav class="optionsMenu">
         <input type="hidden" class="songId">
         <div class="item">Promote!</div>
-        <div class="item">Add to Playlist</div>
+        <?php echo Playlist::getPlaylistsDropdown($con, $userLoggedIn); ?>
         <div class="item">Share</div>
         <div class="item">Copy Link</div>
 </nav>
