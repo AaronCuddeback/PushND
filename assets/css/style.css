@@ -494,3 +494,7 @@ border: none;
 -webkit-appearance: none;
 -moz-appearance: none;
 }
+
+.trackOptions {
+  cursor: pointer;
+}
