@@ -14,5 +14,12 @@
         return $this->username;
     }
 
+    public function getFirstAndLastName() {
+      $query = mysqli_query($this->con, "SELECT concat(`firstName`, ' ', `lastName`) AS 'name' FROM users WHERE ` userName`='$this->username'")or die("Error: ".mysqli_error($this->con));
+      $row = mysqli_fetch_array($query);
+      return $row['name'];
+
+    }
+  
   }
 ?>

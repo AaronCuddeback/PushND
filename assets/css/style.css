@@ -498,3 +498,7 @@ border: none;
 .trackOptions {
   cursor: pointer;
 }
+
+.userInfo h1 {
+  text-align: center;
+}
