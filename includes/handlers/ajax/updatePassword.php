@@ -47,6 +47,6 @@ if(strlen($newPassword1) > 30 || strlen($newPassword1) < 5) {
 $newMd5 = md5($newPassword1);
 
 $query = mysqli_query($con, "UPDATE users SET `password`='$newMd5' WHERE ` userName`='$username'");
-echo "Your password has been changed!";
+echo "Password updated!";
 
 ?>
